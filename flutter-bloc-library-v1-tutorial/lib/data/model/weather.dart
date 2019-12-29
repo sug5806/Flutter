@@ -10,4 +10,11 @@ class Weather {
     @required this.temperatureCelsius,
     this.temperatureFahrenheit,
   });
+
+  @override
+  List<Object> get props => [
+    cityName,
+    temperatureCelsius,
+    temperatureFahrenheit,
+  ];
 }
